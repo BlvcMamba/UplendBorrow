@@ -40,7 +40,7 @@ contract YieldVault {
 
     //the function the view the amount the user has left in the protocol
     //@param the address of the user
-    function balanceOf(address _user) external view returns (uint256) {
-        return balancesOfUser(_user);
-    }
+    // function balanceOf(address _user) external view returns (uint256) {
+    //     return balancesOfUser(_user);
+    // }
 }
