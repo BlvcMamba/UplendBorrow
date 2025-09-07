@@ -34,4 +34,10 @@ contract YieldVaultTest is Test {
         assertEq(vault.totalAssets(), 0);
         assertEq(mamba.balance, 9 ether + 0.99 ether); //got money back minus fee
     }
+
+    //FUZZ TESTING
+
+    function testFuzz_DepositWithdraw (uint256 amount) public {
+        vm.assume(amount > 0 && amount < 1); //ignoring bad ranges.
+    }
 }
